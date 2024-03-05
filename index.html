@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Si Batang</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+  <header class="header">
+    <a href="#" class="logo">Kabupaten Batang</a>
+
+    <nav class="navbar">
+        <a href="#" class="active">Beranda</a>
+        <a href="#">Profil</a>
+        <a href="#">Informasi</a>
+        <a href="#">Layanan</a>
+        <a href="#">Berita</a>
+    </nav>
+
+    <div class="sosial-media">
+        <a href="#"><i class='bx bxl-instagram'></i></a>
+        <a href="#"><i class='bx bxl-youtube' ></i></a>
+        <a href="#"><i class='bx bxl-twitter' ></i></a>
+    </div>
+  </header>
+  <section class="home">
+    <div class="home-content">
+        <h1>Menuju Indonesia Emas 2045</h1>
+        <h3>Batang Berkembang</h3>
+        <p>Kabupaten yang terletak di provinsi Jawa Tengah, Indonesia. 
+            Batang merupakan salah satu kabupaten terbesar di Jawa Tengah, dengan luas wilayah sekitar 2.300 km².
+            Kabupaten Batang memiliki potensi wisata,pertanian, dan sarana prasarana yang memadaiKabupaten Batang terdiri dari 15 kecamatan, 9 kelurahan, dan 239 desa. Pada tahun 2017, jumlah penduduknya mencapai 773.138 jiwa dengan luas wilayah 788,65 km² dan sebaran penduduk 980 jiwa/km²</p>
+    </div>
+    <div class="home-img">
+        <div class="rhombus">
+            <img src="img/3d.png" alt="">
+        </div>
+        
+    </div>
+  </section>
+  <script>
+    window.watsonAssistantChatOptions = {
+      integrationID: "9dfbf080-c1d9-49e7-93d0-3682521f5b6b", // The ID of this integration.
+      region: "us-south", // The region your integration is hosted in.
+      serviceInstanceID: "e50ed3b2-70f2-4fd8-8bb8-43dda82e6f8d", // The ID of your service instance.
+      onLoad: function(instance) { instance.render(); }
+    };
+    setTimeout(function(){
+      const t=document.createElement('script');
+      t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+      document.head.appendChild(t);
+    });
+  </script>
+  <script src="https://watson-api.ng.bluemix.net/assistant/api/v1/"></script>
+  <script>
+    var assistant = new WatsonAssistant({
+      // Insert your API endpoint and model here
+      endpoint: 'https://watson-api.ng.bluemix.net/assistant/api/v1/',
+      model: 'watson-assistant-action-v1.json',
+    });
+  </script>
+</body>
+</html>
